@@ -58,7 +58,7 @@ function calculateRate(response, postType, weight) {
     } else if (postType == "large-env") {
         if (weight == 1) {
             total = 1;
-        } else if(weight > 1) {
+        } else if(weight > 1 && weight <= 13) {
             for (let i = 2; i <= 13; i++) {
                 if (i == weight) {
                     total = 1 + (0.2 * (i - 1));
