@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Postal Rate Calculator</title>
+</head>
+<body>
+    <h1>Calculate your postal rate</h1>
+    <form method="get" action="/math">
+        <div>
+            <label  for="weight">Item weight (oz)</label>
+            <input type="text" name="weight" required>
+        </div>
+
+        <div>
+            <label for="postType">Type of Post:</label>
+            <select id="postType" name="postType" required>
+            <option value="stamp-letter">Letters (Stamped)</option>
+            <option value="meter-letter">Letters (Metered)</option>
+            <option value="large-env">Large Envelopes (Flats)</option>
+            <option value="package">First-Class Package Service—Retail</option>
+            </select>
+        </div>
+
+
+        <input type="submit" name="submit" value="Calculate Rate">
+
+
+
+
+    </form>
+    
+</body>
+</html>
